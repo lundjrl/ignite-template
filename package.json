@@ -6,9 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "create:android": "bunx cap add android",
+    "create:ios": "bunx cap add ios",
+    "sync": "bunx cap sync"
   },
   "dependencies": {
+    "@capacitor/android": "^7.0.1",
+    "@capacitor/core": "^7.0.1",
+    "@capacitor/ios": "^7.0.1",
     "@primevue/themes": "^4.2.5",
     "@tailwindcss/vite": "^4.0.3",
     "pinia": "^2.3.1",
@@ -20,6 +26,7 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@capacitor/cli": "^7.0.1",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
     "typescript": "~5.6.2",
