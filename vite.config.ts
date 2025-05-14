@@ -1,10 +1,26 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import path from 'node:path'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-    vue()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+      'components': path.resolve(__dirname, "./src/components"),
+      'composables': path.resolve(__dirname, "./src/composables"),
+      'design': path.resolve(__dirname, "./src/design"),
+      "helpers": path.resolve(__dirname, "./src/helpers"),
+      'pages': path.resolve(__dirname, "./src/pages"),
+      'routing': path.resolve(__dirname, "./src/routing"),
+      'services': path.resolve(__dirname, "./src/services"),
+      'stores': path.resolve(__dirname, "./src/stores"),
+      'utils': path.resolve(__dirname, "./src/utils"),
+    }
+  },
+  server: {
+    port: 8080
+  },
+  plugins: [vue(), tailwindcss()],
 })

@@ -1,0 +1,12 @@
+services:
+  bun:
+    image: oven/bun:latest
+    user: $UID:$UID
+    command: bun run dev --host
+    ports:
+      - ${APP_MAPPED_PORT:-8080}:8080
+    working_dir: /home/bun/app
+    volumes:
+      - ./:/home/bun/app
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
