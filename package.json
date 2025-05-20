@@ -1,15 +1,17 @@
 {
   "name": "ignite-template",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
     "dev": "vite --host",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "create:android": "bunx cap add android",
     "create:ios": "bunx cap add ios",
-    "sync": "bunx cap sync"
+    "sync": "bunx cap sync",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
     "@capacitor/android": "^7.2.0",
@@ -30,12 +32,13 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.13.1",
     "@capacitor/cli": "^7.2.0",
     "@eslint/js": "^9.26.0",
     "@types/node": "^22.15.18",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/tsconfig": "^0.7.0",
-    "eslint": "^9.26.0",
+    "eslint": "^9.27.0",
     "eslint-plugin-vue": "^10.1.0",
     "globals": "^16.1.0",
     "typescript": "~5.8.3",

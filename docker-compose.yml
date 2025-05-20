@@ -9,4 +9,4 @@ services:
     volumes:
       - ./:/home/bun/app
     extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - 'host.docker.internal:host-gateway'

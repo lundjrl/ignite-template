@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
     "jsx": "preserve",
     "jsxImportSource": "vue",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"],
       "components/*": ["./src/components/*"],
@@ -16,9 +16,9 @@
       "utils/*": ["./src/utils/*"]
     }
   },
-  "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "files": []
 }

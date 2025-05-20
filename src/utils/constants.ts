@@ -6,5 +6,5 @@ export const MAGIC_ARRAY = ['user', 'manager', 'admin'] as const
 
 export const MAGIC_OBJECT = {
   id: 'fake-uuid',
-  name: 'John Smith'
+  name: 'John Smith',
 } as const

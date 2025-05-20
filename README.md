@@ -11,6 +11,9 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 What's a design system?
 https://www.figma.com/blog/design-systems-101-what-is-a-design-system/#what-exactly-is-a-design-system
 
+Other design choices are pulled from this Figma file:
+https://www.figma.com/design/2NuzYy9nfO1360Tp8D9Z91/SPARK-Tailwind-Template-2025----ClientName-----Project-Name-?node-id=605-1271&p=f&m=dev
+
 ### Theme
 
 This project uses a typical tailwind theme

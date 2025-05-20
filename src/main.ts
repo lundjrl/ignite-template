@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
-import './index.css'
 import App from './App.vue'
 import { router } from './routing/routes'
 import storeConfig from './stores/config'
+import './index.css'
 
 createApp(App)
   .use(storeConfig)

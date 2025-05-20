@@ -1,4 +1,4 @@
-import { createPinia } from "pinia";
+import { createPinia } from 'pinia'
 import persistingState from 'pinia-plugin-persistedstate'
 
 // Intentionally left out of main.ts to prevent vendor lockin.

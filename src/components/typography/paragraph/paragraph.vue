@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { twMerge } from "tailwind-merge";
+import { twMerge } from 'tailwind-merge'
 
 interface Props {
-  as?: "pg-lg" | "pg-md" | "pg-sm";
-  class?: string;
+  as?: 'pg-lg' | 'pg-md' | 'pg-sm'
+  class?: string
 }
 
-const props = defineProps<Props>();
+const props = defineProps<Props>()
 </script>
 
 <template>
