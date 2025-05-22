@@ -13,7 +13,7 @@ import {
     <Heading as="h1">
       Accordions
     </Heading>
-    <div class="border p-4 gap-5 flex">
+    <div class="border p-4 gap-5">
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
