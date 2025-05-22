@@ -14,7 +14,7 @@ import {
       Accordions
     </Heading>
     <div class="border p-4 gap-5">
-      <Accordion type="single" collapsible>
+      <Accordion class="border-2 rounded-lg px-4" type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>

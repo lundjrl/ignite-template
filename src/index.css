@@ -1,3 +1,6 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -42,6 +45,10 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  /* Font */
+  --font-sans: "Inter", sans-serif;
+  /* Font: End */
 }
 
 /* Theme Palette */
