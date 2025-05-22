@@ -12,23 +12,23 @@ const props = defineProps<Props>()
 <template>
   <p
     v-if="props.as === 'pg-lg'"
-    :class="twMerge('paragraph text-lg capitalize mb-2', props.class)"
+    :class="twMerge('paragraph text-lg mb-2', props.class)"
   >
     <slot />
   </p>
   <p
     v-else-if="props.as === 'pg-md'"
-    :class="twMerge('paragraph text-base capitalize mb-2', props.class)"
+    :class="twMerge('paragraph text-base mb-2', props.class)"
   >
     <slot />
   </p>
   <p
     v-else-if="props.as === 'pg-sm'"
-    :class="twMerge('paragraph text-sm capitalize mb-2', props.class)"
+    :class="twMerge('paragraph text-sm mb-2', props.class)"
   >
     <slot />
   </p>
-  <p v-else :class="twMerge('paragraph capitalize mb-2', props.class)">
+  <p v-else :class="twMerge('paragraph mb-2', props.class)">
     <slot />
   </p>
 </template>

@@ -14,28 +14,28 @@ const props = defineProps<Props>()
   <label
     v-if="props.as === 'l-lg'"
     :for="props.for"
-    :class="twMerge('label text-lg capitalize mb-2', props.class)"
+    :class="twMerge('label text-lg mb-0', props.class)"
   >
     <slot />
   </label>
   <label
     v-else-if="props.as === 'l-md'"
     :for="props.for"
-    :class="twMerge('label text-base capitalize mb-2', props.class)"
+    :class="twMerge('label text-base mb-0', props.class)"
   >
     <slot />
   </label>
   <label
     v-else-if="props.as === 'l-sm'"
     :for="props.for"
-    :class="twMerge('label text-sm capitalize mb-2', props.class)"
+    :class="twMerge('label text-sm mb-0', props.class)"
   >
     <slot />
   </label>
   <label
     v-else
     :for="props.for"
-    :class="twMerge('label capitalize mb-2', props.class)"
+    :class="twMerge('label mb-0', props.class)"
   >
     <slot />
   </label>
