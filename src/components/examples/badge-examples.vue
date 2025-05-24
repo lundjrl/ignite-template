@@ -5,7 +5,7 @@ import { Badge } from 'components/ui/badge'
 
 <template>
   <div class="flex flex-col">
-    <Heading as="h1">
+    <Heading as="h2">
       Badges
     </Heading>
     <div class="border p-4 gap-5 flex">

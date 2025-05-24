@@ -10,7 +10,7 @@ import {
 
 <template>
   <div class="flex flex-col">
-    <Heading as="h1">
+    <Heading as="h2">
       Accordions
     </Heading>
     <div class="border p-4 gap-5">

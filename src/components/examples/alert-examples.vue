@@ -6,7 +6,7 @@ import { Rocket } from 'lucide-vue-next'
 
 <template>
   <div class="flex flex-col">
-    <Heading as="h1">
+    <Heading as="h2">
       Alerts
     </Heading>
     <div class="p-4">

@@ -6,7 +6,7 @@ import { Checkbox } from 'components/ui/checkbox'
 
 <template>
   <div class="flex flex-col">
-    <Heading as="h1">
+    <Heading as="h2">
       Checkboxes
     </Heading>
     <div class="border p-4 gap-5 flex">

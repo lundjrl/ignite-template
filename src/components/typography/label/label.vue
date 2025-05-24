@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Label } from 'components/ui/label'
 import { twMerge } from 'tailwind-merge'
 
 interface Props {
@@ -11,32 +12,32 @@ const props = defineProps<Props>()
 </script>
 
 <template>
-  <label
+  <Label
     v-if="props.as === 'l-lg'"
     :for="props.for"
-    :class="twMerge('label text-lg mb-0', props.class)"
+    :class="twMerge('text-lg font-sans mb-0', props.class)"
   >
     <slot />
-  </label>
-  <label
+  </Label>
+  <Label
     v-else-if="props.as === 'l-md'"
     :for="props.for"
-    :class="twMerge('label text-base mb-0', props.class)"
+    :class="twMerge('text-base font-sans mb-0', props.class)"
   >
     <slot />
-  </label>
-  <label
+  </Label>
+  <Label
     v-else-if="props.as === 'l-sm'"
     :for="props.for"
-    :class="twMerge('label text-sm mb-0', props.class)"
+    :class="twMerge('text-sm font-sans mb-0', props.class)"
   >
     <slot />
-  </label>
-  <label
+  </Label>
+  <Label
     v-else
     :for="props.for"
-    :class="twMerge('label mb-0', props.class)"
+    :class="twMerge('label font-sans mb-0', props.class)"
   >
     <slot />
-  </label>
+  </Label>
 </template>
