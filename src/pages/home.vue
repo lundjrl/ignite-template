@@ -12,9 +12,11 @@ import InputExampleSection from 'components/examples/input-examples.vue'
 import LabelExampleSection from 'components/examples/label-examples.vue'
 import ParagraphExampleSection from 'components/examples/paragraph-examples.vue'
 import PopoverExampleSection from 'components/examples/popover-examples.vue'
+import SliderExampleSection from 'components/examples/slider-examples.vue'
 import SwitchExampleSection from 'components/examples/switch-examples.vue'
 import TabExampleSection from 'components/examples/tab-examples.vue'
 import TagsInputExampleSection from 'components/examples/tags-input-examples.vue'
+import ToastExampleSection from 'components/examples/toast-examples.vue'
 import TooltipExampleSection from 'components/examples/tooltip-examples.vue'
 import { Heading } from 'components/typography/heading'
 </script>
@@ -46,6 +48,7 @@ import { Heading } from 'components/typography/heading'
         <InputExampleSection />
         <SwitchExampleSection />
         <TabExampleSection />
+        <SliderExampleSection />
       </div>
     </div>
     <div class="flex flex-col">
@@ -57,6 +60,7 @@ import { Heading } from 'components/typography/heading'
         <CommandExampleSection />
         <DialogExampleSection />
         <TagsInputExampleSection />
+        <ToastExampleSection />
       </div>
     </div>
   </main>
