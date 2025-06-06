@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AccordionExampleSection from 'components/examples/accordion-examples.vue'
 import AlertExampleSection from 'components/examples/alert-examples.vue'
+import AvatarExampleSection from 'components/examples/avatar-examples.vue'
 import BadgeExampleSection from 'components/examples/badge-examples.vue'
 import ButtonExampleSection from 'components/examples/button-examples.vue'
 import CheckboxExampleSection from 'components/examples/checkbox-examples.vue'
@@ -19,10 +20,11 @@ import TagsInputExampleSection from 'components/examples/tags-input-examples.vue
 import ToastExampleSection from 'components/examples/toast-examples.vue'
 import TooltipExampleSection from 'components/examples/tooltip-examples.vue'
 import { Heading } from 'components/typography/heading'
+import MainLayout from 'layouts/main.vue'
 </script>
 
 <template>
-  <main class="h-screen w-screen flex flex-col gap-4 p-24">
+  <MainLayout>
     <div class="flex flex-col">
       <Heading as="h1">
         Typography
@@ -38,6 +40,7 @@ import { Heading } from 'components/typography/heading'
         Primitive Components
       </Heading>
       <div class="border p-4 gap-5 flex flex-col">
+        <AvatarExampleSection />
         <ButtonExampleSection />
         <AccordionExampleSection />
         <AlertExampleSection />
@@ -63,5 +66,5 @@ import { Heading } from 'components/typography/heading'
         <ToastExampleSection />
       </div>
     </div>
-  </main>
+  </MainLayout>
 </template>
