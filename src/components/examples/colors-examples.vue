@@ -189,9 +189,9 @@ import { Heading } from 'components/typography/heading'
       </div>
       <div class="p-4 flex flex-col ">
         <div class="relative text-xs mb-1 leading-4 font-medium font-inter text-slategray text-left">
-          sidebar-background
+          sidebar
         </div>
-        <div class="w-60 relative border border-black rounded-lg bg-sidebar-background h-12" />
+        <div class="w-60 relative border border-black rounded-lg bg-sidebar h-12" />
       </div>
       <div class="p-4 flex flex-col ">
         <div class="relative text-xs mb-1 leading-4 font-medium font-inter text-slategray text-left">
