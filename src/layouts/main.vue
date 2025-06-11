@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import MainSidebar from 'components/sidebars/main-sidebar.vue'
 import SidebarProvider from 'components/ui/sidebar/SidebarProvider.vue'
-import SidebarTrigger from 'components/ui/sidebar/SidebarTrigger.vue'
 </script>
 
 <template>
@@ -11,7 +10,6 @@ import SidebarTrigger from 'components/ui/sidebar/SidebarTrigger.vue'
   >
     <MainSidebar />
     <main class="h-screen w-screen flex flex-col gap-4 px-10 pb-10">
-      <SidebarTrigger />
       <slot />
     </main>
   </SidebarProvider>

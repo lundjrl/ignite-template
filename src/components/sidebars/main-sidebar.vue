@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { Avatar, AvatarFallback, AvatarImage } from 'components/ui/avatar'
-import { Calendar, Home, Inbox, Search, Settings } from 'lucide-vue-next'
 import {
   Sidebar,
   SidebarContent,
+  SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
@@ -11,7 +11,9 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from '@/components/ui/sidebar'
+  SidebarTrigger,
+} from 'components/ui/sidebar'
+import { Calendar, Home, Inbox, Search, Settings } from 'lucide-vue-next'
 
 // Menu items.
 const items = [
@@ -68,5 +70,8 @@ const items = [
         </SidebarGroupContent>
       </SidebarGroup>
     </SidebarContent>
+    <SidebarFooter>
+      <SidebarTrigger />
+    </SidebarFooter>
   </Sidebar>
 </template>

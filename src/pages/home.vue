@@ -5,6 +5,7 @@ import AvatarExampleSection from 'components/examples/avatar-examples.vue'
 import BadgeExampleSection from 'components/examples/badge-examples.vue'
 import ButtonExampleSection from 'components/examples/button-examples.vue'
 import CheckboxExampleSection from 'components/examples/checkbox-examples.vue'
+import ColorsExampleSection from 'components/examples/colors-examples.vue'
 import ComboboxExampleSection from 'components/examples/combobox-examples.vue'
 import CommandExampleSection from 'components/examples/command-examples.vue'
 import DialogExampleSection from 'components/examples/dialog-examples.vue'
@@ -25,6 +26,14 @@ import MainLayout from 'layouts/main.vue'
 
 <template>
   <MainLayout>
+    <div class="flex flex-col">
+      <Heading as="h1">
+        Theme
+      </Heading>
+      <div class="p-4">
+        <ColorsExampleSection />
+      </div>
+    </div>
     <div class="flex flex-col">
       <Heading as="h1">
         Typography
