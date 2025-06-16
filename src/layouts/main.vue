@@ -9,7 +9,7 @@ import SidebarProvider from 'components/ui/sidebar/SidebarProvider.vue'
     style="--sidebar-width: 16rem; --sidebar-width-mobile: 16rem;"
   >
     <MainSidebar />
-    <main class="h-screen w-screen flex flex-col gap-4 px-10 pb-10">
+    <main class="h-screen w-screen flex flex-col gap-4 px-10 py-10">
       <slot />
     </main>
   </SidebarProvider>

@@ -24,17 +24,17 @@ const items = [
   },
   {
     title: 'Basic Sidebar Example',
-    url: '/basic',
+    url: '/examples/sidebar/basic',
     icon: Inbox,
   },
   {
-    title: 'Calendar',
-    url: '#',
+    title: 'SSP Dropdown',
+    url: '/examples/ssp-dropdown',
     icon: Calendar,
   },
   {
-    title: 'Search',
-    url: '#',
+    title: 'Components',
+    url: '/examples/components',
     icon: Search,
   },
   {
