@@ -13,7 +13,7 @@ import {
   SidebarMenuItem,
   SidebarTrigger,
 } from 'components/ui/sidebar'
-import { Calendar, Home, Inbox, Search, Settings } from 'lucide-vue-next'
+import { Calendar, Home, Inbox, Search, User } from 'lucide-vue-next'
 
 // Menu items.
 const items = [
@@ -38,9 +38,9 @@ const items = [
     icon: Search,
   },
   {
-    title: 'Settings',
-    url: '#',
-    icon: Settings,
+    title: 'Users',
+    url: '/examples/users',
+    icon: User,
   },
 ]
 </script>
@@ -55,7 +55,7 @@ const items = [
     </SidebarHeader>
     <SidebarContent>
       <SidebarGroup>
-        <SidebarGroupLabel>Application</SidebarGroupLabel>
+        <SidebarGroupLabel>Pages</SidebarGroupLabel>
         <SidebarGroupContent>
           <SidebarMenu>
             <SidebarMenuItem v-for="item in items" :key="item.title">
@@ -71,7 +71,7 @@ const items = [
       </SidebarGroup>
     </SidebarContent>
     <SidebarFooter>
-      <SidebarTrigger />
+      <SidebarTrigger class="cursor-pointer" />
     </SidebarFooter>
   </Sidebar>
 </template>

@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import { Calendar, Home, Inbox, Search, Settings } from 'lucide-vue-next'
 import {
   Sidebar,
   SidebarContent,
+  SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from '@/components/ui/sidebar'
+  SidebarTrigger,
+} from 'components/ui/sidebar'
+import { Calendar, Home, Inbox, Search, User } from 'lucide-vue-next'
 
 // Menu items.
 const items = [
@@ -20,23 +22,23 @@ const items = [
   },
   {
     title: 'Basic Sidebar Example',
-    url: '/basic',
+    url: '/examples/sidebar/basic',
     icon: Inbox,
   },
   {
-    title: 'Calendar',
-    url: '#',
+    title: 'SSP Dropdown',
+    url: '/examples/ssp-dropdown',
     icon: Calendar,
   },
   {
-    title: 'Search',
-    url: '#',
+    title: 'Components',
+    url: '/examples/components',
     icon: Search,
   },
   {
-    title: 'Settings',
-    url: '#',
-    icon: Settings,
+    title: 'Users',
+    url: '/examples/users',
+    icon: User,
   },
 ]
 </script>
@@ -45,7 +47,7 @@ const items = [
   <Sidebar collapsible="icon">
     <SidebarContent>
       <SidebarGroup>
-        <SidebarGroupLabel>Application</SidebarGroupLabel>
+        <SidebarGroupLabel>Pages</SidebarGroupLabel>
         <SidebarGroupContent>
           <SidebarMenu>
             <SidebarMenuItem v-for="item in items" :key="item.title">
@@ -60,5 +62,8 @@ const items = [
         </SidebarGroupContent>
       </SidebarGroup>
     </SidebarContent>
+    <SidebarFooter>
+      <SidebarTrigger class="cursor-pointer" />
+    </SidebarFooter>
   </Sidebar>
 </template>

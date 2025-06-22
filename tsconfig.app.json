@@ -14,7 +14,9 @@
       "routing/*": ["./src/routing/*"],
       "services/*": ["./src/services/*"],
       "stores/*": ["./src/stores/*"],
+      "types/*": ["./src/types/*"],
       "utils/*": ["./src/utils/*"],
+      "validations/*": ["./src/validations/*"],
       "@/*": ["./src/*"]
     },
     /* Linting */

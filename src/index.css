@@ -4,6 +4,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import "./design/browser-reset.css";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
