@@ -1,0 +1,33 @@
+include:
+  - component: gitlab.com/components/opentofu/job-templates@0.17.0 # https://gitlab.com/components/opentofu#migrating-from-the-terraform-cicd-templates
+      inputs:
+        version: 0.17.0
+        opentofu_version: 1.6.2
+        state_name: default
+        root_dir: infrastructure
+  - template: Jobs/SAST-IaC.latest.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/ci/templates/Jobs/SAST-IaC.gitlab-ci.yml
+
+stages:
+  - validate
+  - test
+  - build
+  - deploy
+  - cleanup
+
+fmt:
+  extends: .opentofu:fmt
+  needs: []
+
+validate:
+  extends: .opentofu:validate
+  needs: []
+
+plan:
+  extends: .opentofu:plan
+
+apply:
+  extends: .opentofu:apply
+  dependencies:
+    - plan
+  environment:
+    name: $TF_STATE_NAME

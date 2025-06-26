@@ -10,9 +10,9 @@ import SidebarProvider from 'components/ui/sidebar/SidebarProvider.vue'
     style="--sidebar-width: 16rem; --sidebar-width-mobile: 16rem;"
   >
     <MainSidebar />
-    <div id="page-wrapper" class="flex flex-col">
+    <div id="page-wrapper" class="flex w-full flex-col">
       <HeaderNav />
-      <main class="h-screen w-screen flex flex-col gap-4 p-8">
+      <main class="h-[95vh] flex flex-col gap-4 p-8">
         <slot />
       </main>
     </div>
