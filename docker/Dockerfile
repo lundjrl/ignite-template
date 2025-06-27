@@ -1,4 +1,4 @@
-FROM node:20-alpine as build
+FROM node:22-alpine as build
 
 ARG VERSION=development
 ARG API_URL=http://localhost:8055
@@ -26,7 +26,7 @@ COPY --chown=node:node vite.config.js /home/node/app/
 
 RUN VERSION=${VERSION} API_URL=${API_URL} npm run build
 
-FROM node:20-alpine
+FROM node:22-alpine
 
 USER root
 
@@ -38,6 +38,6 @@ COPY --from=build --chown=node:node /home/node/app/dist/spa /home/node/app
 
 WORKDIR /home/node/app
 
-ENTRYPOINT [ "ignite" ]
+ENTRYPOINT [ "npm" ]
 
-# CMD [ "serve", "--history", "." ]
+CMD [ "dev", "--host", "." ]

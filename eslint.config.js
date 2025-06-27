@@ -20,5 +20,6 @@ export default antfu({
         argsIgnorePattern: '^_',
       },
     ],
+    'antfu/top-level-function': ['off'],
   },
 })

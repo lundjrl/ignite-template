@@ -1,12 +1,16 @@
 services:
-  bun:
-    image: oven/bun:latest
-    user: $UID:$UID
-    command: bun run dev --host
+  node:
+    build:
+      dockerfile: docker/node/Dockerfile
+      context: .
+      args:
+        - UID=${UID}
+    restart: unless-stopped
+    user: ${UID}:${UID}
     ports:
       - ${APP_MAPPED_PORT:-8080}:8080
-    working_dir: /home/bun/app
+    entrypoint: npm
+    command: run dev --host
     volumes:
-      - ./:/home/bun/app
-    extra_hosts:
-      - 'host.docker.internal:host-gateway'
+      - ./:/home/node/app
+
