@@ -1,8 +1,0 @@
-services:
-  template-ignite:
-    image: registry.gitlab.com/sparkbusinessworks/devsecops/template-ignite:${CI_COMMIT_SHORT_SHA:-latest}
-    restart: unless-stopped
-    user: node
-    ports:
-      # TODO: change host port to one open on the server
-      - 3000:4000
