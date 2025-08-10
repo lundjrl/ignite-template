@@ -4,10 +4,10 @@ import { Heading } from 'components/typography/heading'
 
 <template>
   <div class="flex flex-col">
-    <Heading as="h2">
+    <Heading as="h2" class="font-bold">
       Headings
     </Heading>
-    <div class="pb-10">
+    <div class="pt-2 pb-10">
       <Heading as="h1">
         The quick brown fox jumps over the lazy dog
       </Heading>

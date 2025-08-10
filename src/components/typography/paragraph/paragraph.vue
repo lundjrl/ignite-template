@@ -7,28 +7,30 @@ interface Props {
 }
 
 const props = defineProps<Props>()
+
+const style = 'paragraph text-shadow-2xs mb-2'
 </script>
 
 <template>
   <p
     v-if="props.as === 'pg-lg'"
-    :class="twMerge('paragraph text-lg mb-2', props.class)"
+    :class="twMerge('text-lg', style, props.class)"
   >
     <slot />
   </p>
   <p
     v-else-if="props.as === 'pg-md'"
-    :class="twMerge('paragraph text-base mb-2', props.class)"
+    :class="twMerge('text-base', style, props.class)"
   >
     <slot />
   </p>
   <p
     v-else-if="props.as === 'pg-sm'"
-    :class="twMerge('paragraph text-sm mb-2', props.class)"
+    :class="twMerge('text-sm', style, props.class)"
   >
     <slot />
   </p>
-  <p v-else :class="twMerge('paragraph mb-2', props.class)">
+  <p v-else :class="twMerge(style, props.class)">
     <slot />
   </p>
 </template>

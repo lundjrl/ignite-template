@@ -8,7 +8,7 @@ import { Badge } from 'components/ui/badge'
     <Heading as="h2">
       Badges
     </Heading>
-    <div class="border p-4 gap-5 flex">
+    <div class="p-4 gap-5 flex">
       <Badge>Badge</Badge>
       <Badge variant="secondary">
         Secondary

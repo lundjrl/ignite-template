@@ -5,14 +5,10 @@ import AvatarExampleSection from 'components/examples/avatar-examples.vue'
 import BadgeExampleSection from 'components/examples/badge-examples.vue'
 import ButtonExampleSection from 'components/examples/button-examples.vue'
 import CheckboxExampleSection from 'components/examples/checkbox-examples.vue'
-import ColorsExampleSection from 'components/examples/colors-examples.vue'
 import ComboboxExampleSection from 'components/examples/combobox-examples.vue'
 import CommandExampleSection from 'components/examples/command-examples.vue'
 import DialogExampleSection from 'components/examples/dialog-examples.vue'
-import HeadingExampleSection from 'components/examples/heading-examples.vue'
 import InputExampleSection from 'components/examples/input-examples.vue'
-import LabelExampleSection from 'components/examples/label-examples.vue'
-import ParagraphExampleSection from 'components/examples/paragraph-examples.vue'
 import PopoverExampleSection from 'components/examples/popover-examples.vue'
 import SliderExampleSection from 'components/examples/slider-examples.vue'
 import SwitchExampleSection from 'components/examples/switch-examples.vue'
@@ -27,28 +23,10 @@ import MainLayout from 'layouts/main.vue'
 <template>
   <MainLayout>
     <div class="flex flex-col">
-      <Heading as="h1">
-        Theme
-      </Heading>
-      <div class="p-4">
-        <ColorsExampleSection />
-      </div>
-    </div>
-    <div class="flex flex-col">
-      <Heading as="h1">
-        Typography
-      </Heading>
-      <div class="border p-4 gap-5 flex flex-col">
-        <HeadingExampleSection />
-        <ParagraphExampleSection />
-        <LabelExampleSection />
-      </div>
-    </div>
-    <div class="flex flex-col">
-      <Heading as="h1">
+      <Heading as="h1" class="pb-4">
         Primitive Components
       </Heading>
-      <div class="border p-4 gap-5 flex flex-col">
+      <div class="border border-dashed p-4 gap-5 flex flex-col">
         <AvatarExampleSection />
         <ButtonExampleSection />
         <AccordionExampleSection />
@@ -63,11 +41,11 @@ import MainLayout from 'layouts/main.vue'
         <SliderExampleSection />
       </div>
     </div>
-    <div class="flex flex-col">
-      <Heading as="h1">
+    <div class="flex flex-col pt-10">
+      <Heading as="h1" class="pb-4">
         Complex Components
       </Heading>
-      <div class="border p-4 gap-5 flex flex-col">
+      <div class="border border-dashed p-4 gap-5 flex flex-col">
         <ComboboxExampleSection />
         <CommandExampleSection />
         <DialogExampleSection />

@@ -9,12 +9,12 @@ import { Checkbox } from 'components/ui/checkbox'
     <Heading as="h2">
       Checkboxes
     </Heading>
-    <div class="border p-4 gap-5 flex">
+    <div class="p-4 gap-5 flex">
       <div class="flex gap-1 items-center">
         <Checkbox id="terms" class="data-[state=checked]:bg-primary" />
         <Label
           for="terms"
-          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          class="text-sm pl-2 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
           Accept terms and conditions
         </Label>
@@ -23,7 +23,7 @@ import { Checkbox } from 'components/ui/checkbox'
         <Checkbox id="terms" class="data-[state=checked]:bg-primary" />
         <Label
           for="terms"
-          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          class="text-sm pl-2 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
           Accept terms and conditions
         </Label>
@@ -32,7 +32,7 @@ import { Checkbox } from 'components/ui/checkbox'
         <Checkbox id="terms" class="data-[state=checked]:bg-primary" />
         <Label
           for="terms"
-          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          class="text-sm pl-2 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
           Accept terms and conditions
         </Label>

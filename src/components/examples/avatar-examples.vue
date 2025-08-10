@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from 'components/ui/avatar'
     <Heading as="h2">
       Avatars
     </Heading>
-    <div class="border p-4 gap-5 flex">
+    <div class="p-4 gap-5 flex">
       <Avatar>
         <AvatarImage src="https://github.com/unovue.png" alt="@unovue" />
         <AvatarFallback>CN</AvatarFallback>

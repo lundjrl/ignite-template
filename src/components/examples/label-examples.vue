@@ -5,10 +5,10 @@ import { Label } from 'components/typography/label'
 
 <template>
   <div class="flex flex-col">
-    <Heading as="h2">
+    <Heading as="h2" class="font-bold">
       Labels
     </Heading>
-    <div class="pb-10">
+    <div class="pt-2 pb-10">
       <Label as="l-lg" for="">The quick brown fox jumps over the lazy dog</Label>
       <Label as="l-md" for="">The quick brown fox jumps over the lazy dog</Label>
       <Label as="l-sm" for="">The quick brown fox jumps over the lazy dog</Label>

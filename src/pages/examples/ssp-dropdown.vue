@@ -9,10 +9,10 @@ import MainLayout from 'layouts/main.vue'
   <MainLayout>
     <div class="flex flex-col">
       <Heading as="h1">
-        Server-side Pagination Select
+        Autocomplete Combobox
       </Heading>
       <Paragraph as="pg-md" class="pt-10">
-        Gets the next 25 items as the user scrolls.
+        Gets the first 50 items then allows the user to type to search.
       </Paragraph>
     </div>
     <div class="flex items-center w-full">

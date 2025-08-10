@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Heading } from 'components/typography/heading'
 import { Alert, AlertDescription, AlertTitle } from 'components/ui/alert'
-import { Rocket } from 'lucide-vue-next'
+import { AlertCircle, Rocket } from 'lucide-vue-next'
 </script>
 
 <template>

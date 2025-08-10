@@ -11,7 +11,8 @@ import {
   SidebarMenuItem,
   SidebarTrigger,
 } from 'components/ui/sidebar'
-import { Calendar, Home, Inbox, Search, User } from 'lucide-vue-next'
+import { Calendar, Home, Inbox, Palette, Puzzle, Table2, User } from 'lucide-vue-next'
+import { RouterLink } from 'vue-router'
 
 // Menu items.
 const items = [
@@ -21,23 +22,33 @@ const items = [
     icon: Home,
   },
   {
+    title: 'Theme',
+    url: '/examples/theme',
+    icon: Palette,
+  },
+  {
+    title: 'Components',
+    url: '/examples/components',
+    icon: Puzzle,
+  },
+  {
     title: 'Basic Sidebar Example',
     url: '/examples/sidebar/basic',
     icon: Inbox,
   },
   {
-    title: 'SSP Dropdown',
+    title: 'Combobox example',
     url: '/examples/ssp-dropdown',
     icon: Calendar,
   },
   {
-    title: 'Components',
-    url: '/examples/components',
-    icon: Search,
+    title: 'Table example',
+    url: '/examples/table-to-card',
+    icon: Table2,
   },
   {
     title: 'Users',
-    url: '/examples/users',
+    url: '/',
     icon: User,
   },
 ]
@@ -52,10 +63,10 @@ const items = [
           <SidebarMenu>
             <SidebarMenuItem v-for="item in items" :key="item.title">
               <SidebarMenuButton as-child>
-                <a :href="item.url">
+                <RouterLink :to="item.url">
                   <component :is="item.icon" />
                   <span>{{ item.title }}</span>
-                </a>
+                </RouterLink>
               </SidebarMenuButton>
             </SidebarMenuItem>
           </SidebarMenu>

@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from 'components/ui/tabs'
     <Heading as="h2">
       Tabs
     </Heading>
-    <div class="border p-4 gap-5 flex">
+    <div class="p-4 gap-5 flex">
       <Tabs default-value="firstValue" class="w-[400px]">
         <TabsList class="grid w-full grid-cols-2">
           <TabsTrigger value="firstValue">

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Heading } from 'components/typography/heading'
+import Button from 'components/ui/button/Button.vue'
 import {
   Dialog,
   DialogContent,
@@ -15,10 +17,10 @@ import {
     <Heading as="h2">
       Dialogs
     </Heading>
-    <div class="border p-4 gap-5 flex">
+    <div class="p-4 gap-5 flex">
       <Dialog>
         <DialogTrigger>
-          Edit Profile
+          <Button>Edit Profile</Button>
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
@@ -29,7 +31,7 @@ import {
           </DialogHeader>
 
           <DialogFooter>
-            Save changes
+            <Button>Save Changes</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>

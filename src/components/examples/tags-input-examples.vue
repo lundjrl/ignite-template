@@ -12,7 +12,7 @@ const modelValue = ref(['Apple', 'Banana'])
     <Heading as="h2">
       Tags Input (filter tags)
     </Heading>
-    <div class="border p-4 gap-5 flex">
+    <div class="p-4 gap-5 flex">
       <TagsInput v-model="modelValue">
         <TagsInputItem v-for="item in modelValue" :key="item" :value="item">
           <TagsInputItemText />

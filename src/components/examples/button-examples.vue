@@ -8,7 +8,7 @@ import { Button } from 'components/ui/button'
     <Heading as="h2">
       Buttons
     </Heading>
-    <div class="border p-4 gap-5 flex">
+    <div class="p-4 gap-5 flex">
       <Button>Click Me</Button>
       <Button variant="destructive">
         Click Me

@@ -12,7 +12,7 @@ export const alertVariants = cva(
       variant: {
         default: 'bg-white text-neutral-950 dark:bg-neutral-950 dark:text-neutral-50',
         destructive:
-          'text-red-500 bg-white [&>svg]:text-current *:data-[slot=alert-description]:text-red-500/90 dark:text-red-900 dark:bg-neutral-950 dark:*:data-[slot=alert-description]:text-red-900/90',
+          'text-destructive bg-white [&>svg]:text-current *:data-[slot=alert-description]:text-destructive/90 dark:text-destructive-foreground dark:bg-neutral-950 dark:*:data-[slot=alert-description]:text-destructive-foreground/90',
       },
     },
     defaultVariants: {

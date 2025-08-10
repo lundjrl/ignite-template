@@ -5,10 +5,10 @@ import { Paragraph } from 'components/typography/paragraph'
 
 <template>
   <div class="flex flex-col">
-    <Heading as="h2">
+    <Heading as="h2" class="font-bold">
       Paragraphs
     </Heading>
-    <div class="pg-10">
+    <div class="pt-2 pb-10">
       <Paragraph as="pg-lg">
         The quick brown fox jumps over the lazy dog
       </Paragraph>

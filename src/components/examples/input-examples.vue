@@ -11,23 +11,32 @@ import { Search } from 'lucide-vue-next'
     <Heading as="h2">
       Inputs
     </Heading>
-    <div class="border p-4 gap-5 flex">
-      <Input type="text" placeholder="Regular" />
-      <Input type="email" placeholder="Email" />
-
-      <div class="grid w-full max-w-sm items-center min-w-72 gap-1.5">
-        <Label for="picture">File</Label>
-        <Input id="picture" type="file" />
+    <div class="p-4 gap-5 flex flex-wrap">
+      <div class="grid max-w-sm min-w-72 gap-1.5">
+        <Input type="text" placeholder="Regular" />
       </div>
-      <div class="flex items-center w-full">
+      <div class="grid max-w-sm min-w-72 gap-1.5">
+        <Input type="email" placeholder="Email" />
+      </div>
+
+      <div class="w-full">
+        <div class="grid max-w-sm items-center min-w-72 gap-1.5">
+          <Label for="picture">File</Label>
+          <Input id="picture" type="file" />
+        </div>
+      </div>
+
+      <div class="flex items-center max-w-sm min-w-72">
         <Input disabled type="text" placeholder="Disabled" />
       </div>
 
-      <div class="flex w-full max-w-sm items-center gap-1.5">
-        <Input id="email" type="email" placeholder="Email" />
-        <Button type="submit">
-          Subscribe
-        </Button>
+      <div class="w-full">
+        <div class="max-w-sm items-center flex gap-1.5">
+          <Input id="email" type="email" placeholder="Email" />
+          <Button type="submit">
+            Subscribe
+          </Button>
+        </div>
       </div>
       <div class="flex relative w-full max-w-sm items-center">
         <Input id="search" type="text" placeholder="Search..." class="pl-10" />
